@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_blue"
-    android:scrollbarSize="20sp"
+    android:scrollbarSize="24sp"
     tools:context=".MainActivity">
 
     <ImageView
@@ -55,8 +55,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/inter_regular"
+        android:paddingVertical="30dp"
         android:text="OU"
         android:textColor="@color/gray"
         android:textSize="9sp"
@@ -78,15 +79,16 @@
         android:id="@+id/buttonExp"
         android:layout_width="wrap_content"
         android:layout_height="58dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/salmon"
         android:fontFamily="@font/inter_light"
         android:paddingHorizontal="18dp"
         android:text="Je suis an Expert"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/targetKey" />
 
     <TextView
         android:id="@+id/textView"
@@ -104,6 +106,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/targetKey"
+        android:visibility="gone"
+        android:layout_width="202dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Code"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
