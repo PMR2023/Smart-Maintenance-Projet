@@ -17,13 +17,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.google.ar.core.examples.java.helloar.HelloArActivity">
+    tools:context=".HelloArActivity">
 
   <android.opengl.GLSurfaceView
       android:id="@+id/surfaceview"
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
       android:layout_gravity="top"/>
+
+  <Button
+      android:id="@+id/takePhotoButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="invisible"
+      android:text="Prends Photo"
+      android:contentDescription="hf_use_description|Prends Photo"
+      />
+
+  <Button
+      android:id="@+id/nextButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="invisible"
+      android:text="Prochaine"
+      android:contentDescription="hf_use_description|Prochaine"
+      />
+
+  <Button
+      android:id="@+id/previousButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="invisible"
+      android:text="Précédente"
+      android:contentDescription="hf_use_description|Précédente"
+      />
 
   <ImageButton
       android:id="@+id/settings_button"
@@ -33,6 +60,6 @@
       android:layout_alignParentTop="true"
       android:layout_margin="25dp"
       android:src="@drawable/ic_settings"
-      android:background="@android:color/transparent"/>
+      android:background="@android:color/transparent" />
 
 </RelativeLayout>
