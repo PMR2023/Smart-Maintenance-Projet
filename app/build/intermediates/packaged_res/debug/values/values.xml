@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="dark_blue">#FF2D3047</color>
+    <color name="gray">#FF999999</color>
+    <color name="light_blue">#FFAFDBF5</color>
+    <color name="salmon">#FFDB504A</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">SmartMaintenance-Design</string>
+    <style name="Base.Theme.SmartMaintenanceDesign" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/dark_blue</item>
+    </style>
+    <style name="Theme.SmartMaintenanceDesign" parent="Base.Theme.SmartMaintenanceDesign"/>
+</resources>
