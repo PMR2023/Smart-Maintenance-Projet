@@ -103,6 +103,7 @@ class HelloArActivity : AppCompatActivity() {
     }
     previousButton.setOnClickListener {
       toastAlerter("Clicked PREVIOUS BUTTON")
+      view.tapHelper.simulateTouch()
     }
     photoButton.setOnClickListener {
       toastAlerter("Clicked TAKE PHOTO BUTTON")

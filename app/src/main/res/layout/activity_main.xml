@@ -23,7 +23,8 @@
       android:id="@+id/surfaceview"
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
-      android:layout_gravity="top"/>
+      android:layout_gravity="top"
+      android:contentDescription="hf_use_description|Toucher"/>
 
   <Button
       android:id="@+id/takePhotoButton"
@@ -33,7 +34,7 @@
       android:layout_marginTop="25dp"
       android:contentDescription="hf_use_description|Prends Photo"
       android:text="Prends Photo"
-      android:visibility="invisible" />
+      android:visibility="visible"/>
 
   <Button
       android:id="@+id/nextButton"
@@ -57,7 +58,7 @@
       android:layout_toStartOf="@+id/nextButton"
       android:contentDescription="hf_use_description|Précédente"
       android:text="Précédente"
-      android:visibility="invisible" />
+      android:visibility="visible" />
 
   <ImageButton
       android:id="@+id/settings_button"

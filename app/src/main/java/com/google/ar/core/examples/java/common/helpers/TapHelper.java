@@ -15,8 +15,12 @@
  */
 package com.google.ar.core.examples.java.common.helpers;
 
+import static android.view.MotionEvent.ACTION_UP;
+
 import android.content.Context;
+import android.util.Log;
 import android.view.GestureDetector;
+import android.view.InputEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -31,12 +35,19 @@ public final class TapHelper implements OnTouchListener {
   private final GestureDetector gestureDetector;
   private final BlockingQueue<MotionEvent> queuedSingleTaps = new ArrayBlockingQueue<>(16);
 
+    public void simulateTouch() {
+        MotionEvent a = MotionEvent.obtain(21454436, 21454461, ACTION_UP, 371.25F, 1234.9766F, 0);
+        Log.i("BUCETA", a.toString());
+        queuedSingleTaps.offer(a);
+    }
+
   /**
    * Creates the tap helper.
    *
    * @param context the application's context.
    */
   public TapHelper(Context context) {
+
     gestureDetector =
         new GestureDetector(
             context,
@@ -44,9 +55,15 @@ public final class TapHelper implements OnTouchListener {
               @Override
               public boolean onSingleTapUp(MotionEvent e) {
                 // Queue tap if there is space. Tap is lost if queue is full.
-                queuedSingleTaps.offer(e);
+                 /* action=ACTION_UP, actionButton=0, id[0]=0, x[0]=371.25, y[0]=1234.9766, toolType[0]=TOOL_TYPE_FINGER, buttonState=0,
+                          classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=21454461,
+                          downTime=21454436, deviceId=2, source=0x1002, displayId=0, eventId=62927073*/
+                    MotionEvent a = MotionEvent.obtain(21454436, 21454461, ACTION_UP, 371.25F, 1234.9766F, 0);
+                  Log.i("BUCETA", e.toString());
+                queuedSingleTaps.offer(a);
                 return true;
               }
+
 
               @Override
               public boolean onDown(MotionEvent e) {
