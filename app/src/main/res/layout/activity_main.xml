@@ -29,28 +29,35 @@
       android:id="@+id/takePhotoButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:visibility="invisible"
-      android:text="Prends Photo"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="25dp"
       android:contentDescription="hf_use_description|Prends Photo"
-      />
+      android:text="Prends Photo"
+      android:visibility="invisible" />
 
   <Button
       android:id="@+id/nextButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:visibility="invisible"
-      android:text="Prochaine"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="25dp"
+      android:layout_marginEnd="79dp"
       android:contentDescription="hf_use_description|Prochaine"
-      />
+      android:text="Prochaine"
+      android:visibility="invisible" />
 
   <Button
       android:id="@+id/previousButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:visibility="invisible"
-      android:text="Précédente"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="25dp"
+      android:layout_marginEnd="0dp"
+      android:layout_toStartOf="@+id/nextButton"
       android:contentDescription="hf_use_description|Précédente"
-      />
+      android:text="Précédente"
+      android:visibility="invisible" />
 
   <ImageButton
       android:id="@+id/settings_button"

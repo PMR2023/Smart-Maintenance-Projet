@@ -17,6 +17,7 @@ package com.google.ar.core.examples.kotlin.helloar
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.ar.core.Config
@@ -92,6 +93,20 @@ class HelloArActivity : AppCompatActivity() {
 
     depthSettings.onCreate(this)
     instantPlacementSettings.onCreate(this)
+
+    val nextButton = findViewById<Button>(R.id.nextButton)
+    val previousButton = findViewById<Button>(R.id.previousButton)
+    val photoButton = findViewById<Button>(R.id.takePhotoButton)
+
+    nextButton.setOnClickListener {
+      toastAlerter("Clicked NEXT BUTTON")
+    }
+    previousButton.setOnClickListener {
+      toastAlerter("Clicked PREVIOUS BUTTON")
+    }
+    photoButton.setOnClickListener {
+      toastAlerter("Clicked TAKE PHOTO BUTTON")
+    }
   }
 
   // Configure the session, using Lighting Estimation, and Depth mode.
@@ -140,5 +155,9 @@ class HelloArActivity : AppCompatActivity() {
   override fun onWindowFocusChanged(hasFocus: Boolean) {
     super.onWindowFocusChanged(hasFocus)
     FullScreenHelper.setFullScreenOnWindowFocusChanged(this, hasFocus)
+  }
+
+  fun toastAlerter(message: String, duration: Int = Toast.LENGTH_LONG) {
+    Toast.makeText(applicationContext, message, duration).show()
   }
 }
