@@ -1,0 +1,72 @@
+<!--
+   Copyright 2021 Google LLC
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelloArActivity">
+
+  <android.opengl.GLSurfaceView
+      android:id="@+id/surfaceview"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_gravity="top" />
+
+  <Button
+      android:id="@+id/takePhotoButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="25dp"
+      android:contentDescription="hf_use_description|Prends Photo"
+      android:text="Prends Photo"
+      android:visibility="visible"/>
+
+  <Button
+      android:id="@+id/nextButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="25dp"
+      android:layout_marginEnd="79dp"
+      android:contentDescription="hf_use_description|Prochaine"
+      android:text="Prochaine"
+      android:visibility="invisible" />
+
+  <Button
+      android:id="@+id/previousButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="25dp"
+      android:layout_marginEnd="0dp"
+      android:layout_toStartOf="@+id/nextButton"
+      android:contentDescription="hf_use_description|Précédente"
+      android:text="Précédente"
+      android:visibility="visible" />
+
+  <ImageButton
+      android:id="@+id/settings_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentTop="true"
+      android:layout_margin="25dp"
+      android:src="@drawable/ic_settings"
+      android:background="@android:color/transparent" />
+
+</RelativeLayout>
