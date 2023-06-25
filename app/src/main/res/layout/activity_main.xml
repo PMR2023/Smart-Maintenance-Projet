@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/dark_blue"
     android:scrollbarSize="20sp"
-    tools:context=".MainActivity">
+    tools:context="com.google.ar.core.smartmaintenance.webrtc.MainActivity">
 
     <LinearLayout
         android:id="@+id/incomingCallLayout"

@@ -54,6 +54,7 @@ open class HelloArActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+  /*
 
     // Setup ARCore session lifecycle helper and configuration.
     arCoreSessionHelper = ARCoreSessionLifecycleHelper(this)
@@ -84,7 +85,7 @@ open class HelloArActivity : AppCompatActivity() {
     lifecycle.addObserver(renderer)
 
     // Set up Hello AR UI.
-    view = HelloArView(this)
+    view = HelloArView(this, binding)
     lifecycle.addObserver(view)
     setContentView(view.root)
 
@@ -107,7 +108,7 @@ open class HelloArActivity : AppCompatActivity() {
     }
     photoButton.setOnClickListener {
       toastAlerter("Clicked TAKE PHOTO BUTTON")
-    }
+    }*/
   }
 
   // Configure the session, using Lighting Estimation, and Depth mode.

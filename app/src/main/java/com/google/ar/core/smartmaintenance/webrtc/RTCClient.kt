@@ -62,7 +62,7 @@ class RTCClient(
         return peerConnectionFactory.createPeerConnection(iceServer, observer)
     }
 
-    fun initializeSurfaceView(surface: SmartRenderer) {
+    fun initializeSurfaceView(surface: SurfaceViewRenderer) {
         surface.run {
             setEnableHardwareScaler(true)
             setMirror(true)

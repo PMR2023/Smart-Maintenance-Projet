@@ -111,7 +111,7 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
         lifecycle.addObserver(renderer)
 
         // Set up Hello AR UI.
-        view = HelloArView(this)
+        view = HelloArView(this, binding)
         lifecycle.addObserver(view)
         //setContentView(view.root)
 
@@ -247,8 +247,8 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
                         setStartScreenLayoutGone()
                         setCallLayoutVisible()
                         binding.apply {
-                            rtcClient?.initializeSurfaceView(localView)
-                            rtcClient?.initializeSurfaceView(remoteView)
+                            //rtcClient?.initializeSurfaceView(localView)
+                            //rtcClient?.initializeSurfaceView(remoteView)
                             rtcClient?.startLocalVideo(localView)
                             localView.visibility = View.GONE
                             Log.d(TAG, "$rtcClient")
@@ -279,8 +279,8 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
                         setStartScreenLayoutGone()
 
                         binding.apply {
-                            rtcClient?.initializeSurfaceView(localView)
-                            rtcClient?.initializeSurfaceView(remoteView)
+                            //rtcClient?.initializeSurfaceView(localView)
+                            //rtcClient?.initializeSurfaceView(remoteView)
                             rtcClient?.startLocalVideo(localView)
                             remoteView.visibility = View.GONE
                         }
@@ -351,17 +351,15 @@ class SmartRenderer(context : Context, attrs : AttributeSet) : GLSurfaceView(con
 
     override fun surfaceChanged(holder: SurfaceHolder, format: Int, w: Int, h: Int) {
         super.surfaceChanged(holder, format, w, h)
-        TODO("Not yet implemented")
     }
 
     override fun surfaceDestroyed(holder: SurfaceHolder) {
         super.surfaceDestroyed(holder)
-        TODO("Not yet implemented")
     }
 
     override fun onFrame(p0: VideoFrame?) {
         this.eglRenderer.onFrame(p0)
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
 }

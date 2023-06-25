@@ -26,11 +26,12 @@ import androidx.lifecycle.LifecycleOwner
 import com.google.ar.core.Config
 import com.google.ar.core.smartmaintenance.java.common.helpers.SnackbarHelper
 import com.google.ar.core.smartmaintenance.java.common.helpers.TapHelper
+import com.google.ar.core.smartmaintenance.kotlin.helloar.databinding.ActivityMainBinding
 
 /** Contains UI elements for Hello AR. */
-class HelloArView(val activity: HelloArActivity) : DefaultLifecycleObserver {
+class HelloArView(val activity: HelloArActivity, binding: ActivityMainBinding) : DefaultLifecycleObserver {
   val root = View.inflate(activity, R.layout.ar_main, null)
-  val surfaceView = root.findViewById<GLSurfaceView>(R.id.surfaceview)
+  val surfaceView = binding.remoteView
   val settingsButton =
     root.findViewById<ImageButton>(R.id.settings_button).apply {
       setOnClickListener { v ->
@@ -57,7 +58,7 @@ class HelloArView(val activity: HelloArActivity) : DefaultLifecycleObserver {
     get() = activity.arCoreSessionHelper.session
 
   val snackbarHelper = SnackbarHelper()
-  val tapHelper = TapHelper(activity).also { surfaceView.setOnTouchListener(it) }
+  val tapHelper = TapHelper(activity).also { (surfaceView as GLSurfaceView).setOnTouchListener(it) }
 
   override fun onResume(owner: LifecycleOwner) {
     surfaceView.onResume()
