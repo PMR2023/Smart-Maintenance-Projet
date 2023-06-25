@@ -2,9 +2,11 @@ package com.google.ar.core.smartmaintenance.webrtc
 
 import android.Manifest
 import android.content.Context
+import android.content.Intent
 import android.icu.text.Transliterator
 import android.opengl.GLSurfaceView
 import android.os.Bundle
+import android.speech.RecognizerIntent
 import android.util.AttributeSet
 import android.util.Log
 import android.view.SurfaceHolder
@@ -39,6 +41,8 @@ import org.webrtc.SurfaceEglRenderer
 import org.webrtc.SurfaceViewRenderer
 import org.webrtc.VideoFrame
 import org.webrtc.VideoSink
+import java.util.Locale
+import java.util.Objects
 import kotlin.random.Random
 
 class MainActivity : HelloArActivity(), NewMessageInterface {
@@ -54,6 +58,14 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
     private var isCameraPause = false
     private val rtcAudioManager by lazy { RTCAudioManager.create(this) }
     private var isSpeakerMode = true
+
+    val voiceCommands = listOf(
+        "appelle",
+        "appel",
+        "connexion",
+        "connecter",
+        "faire une appel",
+    )
 
     /**  AR variables */
 
@@ -172,6 +184,44 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
 
 
         binding.apply {
+            speechBtn.setOnClickListener {
+                // on below line we are calling speech recognizer intent.
+                val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
+
+                // on below line we are passing language model
+                // and model free form in our intent
+                intent.putExtra(
+                    RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                    RecognizerIntent.LANGUAGE_MODEL_FREE_FORM
+                )
+
+                // on below line we are passing our
+                // language as a default language.
+                intent.putExtra(
+                    RecognizerIntent.EXTRA_LANGUAGE,
+                    Locale.getDefault()
+                )
+
+                // on below line we are specifying a prompt
+                // message as speak to text on below line.
+                intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Speak to text")
+
+                // on below line we are specifying a try catch block.
+                // in this block we are calling a start activity
+                // for result method and passing our result code.
+                try {
+                    startActivityForResult(intent, 1)
+                } catch (e: Exception) {
+                    // on below line we are displaying error message in toast
+                    Toast
+                        .makeText(
+                            this@MainActivity, " " + e.message,
+                            Toast.LENGTH_SHORT
+                        )
+                        .show()
+                }
+            }
+
             buttonExp.setOnClickListener {
                 if (buttonExp.text.toString() == "Call") {
                     socketRepository?.sendMessageToSocket(
@@ -235,6 +285,32 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
 
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == 1) {
+            // on below line we are checking if result code is ok
+            if (resultCode == RESULT_OK && data != null) {
+
+                // in that case we are extracting the
+                // data from our array list
+                val res: ArrayList<String> =
+                    data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS) as ArrayList<String>
+
+                // on below line we are setting data
+                // to our output text view.
+                val command = Objects.requireNonNull(res)[0]
+                if (voiceCommands.contains(command)) {
+                    socketRepository?.sendMessageToSocket(
+                        MessageModel(
+                            "start_call", userName, binding.targetKey.text.toString(), null
+                        )
+                    )
+                    target = binding.targetKey.text.toString()
+                }
+            }
+        }
+    }
+
     override fun onNewMessage(message: MessageModel) {
         Log.d(TAG, "onNewMessage: $message")
         when(message.type){
@@ -285,9 +361,9 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
             }
             "offer_received" ->{
                 runOnUiThread {
-                    setIncomingCallLayoutVisible()
+                    //setIncomingCallLayoutVisible()
                     binding.incomingNameTV.text = "${message.name.toString()} is calling you"
-                    binding.acceptButton.setOnClickListener {
+                    //binding.acceptButton.setOnClickListener {
                         setIncomingCallLayoutGone()
                         setCallLayoutVisible()
                         setStartScreenLayoutGone()
@@ -308,7 +384,7 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
                         target = message.name!!
                         binding.remoteViewLoading.visibility = View.GONE
 
-                    }
+                    //}
                     binding.rejectButton.setOnClickListener {
                         setIncomingCallLayoutGone()
                     }

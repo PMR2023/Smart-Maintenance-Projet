@@ -48,7 +48,8 @@
         android:id="@+id/callLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone">
+        android:visibility="gone"
+        tools:visibility="gone">
 
         <com.google.ar.core.smartmaintenance.webrtc.SmartRenderer
             android:id="@+id/remote_view"
@@ -142,7 +143,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/StartScreen">
+        android:id="@+id/StartScreen"
+        tools:visibility="visible">
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
@@ -208,7 +210,7 @@
             android:backgroundTint="@color/salmon"
             android:fontFamily="@font/inter_light"
             android:paddingHorizontal="18dp"
-            android:text="Je suis an Expert"
+            android:text="Saisir un code"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -225,7 +227,7 @@
             android:layout_marginTop="200dp"
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/inter_regular"
-            android:text="Envoyez le code ci-dessous à votre Expert"
+            android:text="Envoyez le code ci-dessous à votre Client"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -250,6 +252,18 @@
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/speechBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voix"
+            style="@style/Theme.SmartMaintenanceDesign"
+            android:background="@color/salmon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonExp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
