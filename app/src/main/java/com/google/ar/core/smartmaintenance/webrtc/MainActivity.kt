@@ -2,6 +2,7 @@ package com.google.ar.core.smartmaintenance.webrtc
 
 import android.Manifest
 import android.content.Context
+import android.icu.text.Transliterator
 import android.opengl.GLSurfaceView
 import android.os.Bundle
 import android.util.AttributeSet
@@ -15,6 +16,8 @@ import com.google.ar.core.exceptions.UnavailableApkTooOldException
 import com.google.ar.core.exceptions.UnavailableDeviceNotCompatibleException
 import com.google.ar.core.exceptions.UnavailableSdkTooOldException
 import com.google.ar.core.exceptions.UnavailableUserDeclinedInstallationException
+import com.google.ar.core.smartmaintenance.java.common.helpers.Posicao
+import com.google.ar.core.smartmaintenance.java.common.helpers.TapHelper
 import com.google.ar.core.smartmaintenance.java.common.samplerender.SampleRender
 import com.google.ar.core.smartmaintenance.kotlin.common.helpers.ARCoreSessionLifecycleHelper
 import com.google.ar.core.smartmaintenance.kotlin.helloar.HelloArActivity
@@ -33,6 +36,7 @@ import org.webrtc.IceCandidate
 import org.webrtc.MediaStream
 import org.webrtc.SessionDescription
 import org.webrtc.SurfaceEglRenderer
+import org.webrtc.SurfaceViewRenderer
 import org.webrtc.VideoFrame
 import org.webrtc.VideoSink
 import kotlin.random.Random
@@ -40,11 +44,11 @@ import kotlin.random.Random
 class MainActivity : HelloArActivity(), NewMessageInterface {
 
     lateinit var binding : ActivityMainBinding
-    private var userName:String?=null
-    private var socketRepository: SocketRepository?=null
+    var userName:String?=null
+    var socketRepository: SocketRepository?=null
     private var rtcClient : RTCClient?=null
     private val TAG = "CallActivity"
-    private var target:String = ""
+    var target:String = ""
     private val gson = Gson()
     private var isMute = false
     private var isCameraPause = false
@@ -234,6 +238,16 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
     override fun onNewMessage(message: MessageModel) {
         Log.d(TAG, "onNewMessage: $message")
         when(message.type){
+            "click" -> {
+                Log.d("CLICK LOG", "ENTROU")
+                try {
+                    Log.d("CLICK LOG", "${gson.fromJson(gson.toJson(message.data), Posicao::class.java)}")
+                    view.tapHelper.simulateTouch(gson.fromJson(gson.toJson(message.data), Posicao::class.java).x,
+                        gson.fromJson(gson.toJson(message.data), Posicao::class.java).y)
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
+            }
             "call_response"->{
                 if (message.data == "user is not online"){
                     //user is not reachable
@@ -279,10 +293,11 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
                         setStartScreenLayoutGone()
 
                         binding.apply {
-                            //rtcClient?.initializeSurfaceView(localView)
+                            rtcClient?.initializeSurfaceView(localView)
                             //rtcClient?.initializeSurfaceView(remoteView)
                             rtcClient?.startLocalVideo(localView)
                             remoteView.visibility = View.GONE
+                            val tapHelper = TapHelper(this@MainActivity).also { localView.setOnTouchListener(it) }
                         }
                         val session = SessionDescription(
                             SessionDescription.Type.OFFER,
@@ -313,6 +328,7 @@ class MainActivity : HelloArActivity(), NewMessageInterface {
                     e.printStackTrace()
                 }
             }
+
         }
     }
 

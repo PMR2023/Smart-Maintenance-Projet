@@ -23,6 +23,10 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+
+import com.google.ar.core.smartmaintenance.webrtc.MainActivity;
+import com.google.ar.core.smartmaintenance.webrtc.models.MessageModel;
+
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -34,8 +38,8 @@ public final class TapHelper implements OnTouchListener {
   private final GestureDetector gestureDetector;
   private final BlockingQueue<MotionEvent> queuedSingleTaps = new ArrayBlockingQueue<>(16);
 
-    public void simulateTouch() {
-        MotionEvent a = MotionEvent.obtain(21454436, 21454461, ACTION_UP, 371.25F, 1234.9766F, 0);
+    public void simulateTouch(float x, float y) {
+        MotionEvent a = MotionEvent.obtain(21454436, 21454461, ACTION_UP, x, y, 0);
         Log.i("BUCETA", a.toString());
         queuedSingleTaps.offer(a);
     }
@@ -59,7 +63,11 @@ public final class TapHelper implements OnTouchListener {
                           downTime=21454436, deviceId=2, source=0x1002, displayId=0, eventId=62927073*/
                     MotionEvent a = MotionEvent.obtain(21454436, 21454461, ACTION_UP, 371.25F, 1234.9766F, 0);
                   Log.i("BUCETA", e.toString());
-                queuedSingleTaps.offer(a);
+
+                  ((MainActivity) context).getSocketRepository().sendMessageToSocket(
+                          new MessageModel("click", ((MainActivity) context).getUserName(), ((MainActivity) context).getTarget(), new Posicao(e.getX(), e.getY()))
+                  );
+                queuedSingleTaps.offer(e);
                 return true;
               }
 
@@ -85,3 +93,16 @@ public final class TapHelper implements OnTouchListener {
     return gestureDetector.onTouchEvent(motionEvent);
   }
 }
+
+class MessageModelJava {
+    String type, name, target;
+    Posicao data;
+
+    public MessageModelJava(String type, String name, String target, Posicao data) {
+        this.type = type;
+        this.name = name;
+        this.target = target;
+        this.data = data;
+    }
+}
+
