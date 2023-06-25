@@ -197,9 +197,9 @@ class MainActivity : AppCompatActivity(), NewMessageInterface {
             }
             "offer_received" ->{
                 runOnUiThread {
-                    setIncomingCallLayoutVisible()
+                    //setIncomingCallLayoutVisible()
                     binding.incomingNameTV.text = "${message.name.toString()} is calling you"
-                    binding.acceptButton.setOnClickListener {
+                    //binding.acceptButton.setOnClickListener {
                         setIncomingCallLayoutGone()
                         setCallLayoutVisible()
                         setStartScreenLayoutGone()
@@ -219,10 +219,10 @@ class MainActivity : AppCompatActivity(), NewMessageInterface {
                         target = message.name!!
                         binding.remoteViewLoading.visibility = View.GONE
 
-                    }
-                    binding.rejectButton.setOnClickListener {
+                    //}
+                    //binding.rejectButton.setOnClickListener {
                         setIncomingCallLayoutGone()
-                    }
+                    //}
 
                 }
 

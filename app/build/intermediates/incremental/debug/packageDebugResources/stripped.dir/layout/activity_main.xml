@@ -167,16 +167,6 @@
             tools:text="836B7K" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="37dp"
-            android:layout_height="61dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/login" />
-
-        <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

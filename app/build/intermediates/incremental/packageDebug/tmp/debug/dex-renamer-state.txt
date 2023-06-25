@@ -1,10 +1,10 @@
-#Thu Jun 22 22:20:24 CEST 2023
-base.0=C\:\\Users\\pedro\\AndroidStudioProjects\\NativeAndroidWebRTC\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\pedro\\AndroidStudioProjects\\NativeAndroidWebRTC\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\pedro\\AndroidStudioProjects\\NativeAndroidWebRTC\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=C\:\\Users\\pedro\\AndroidStudioProjects\\NativeAndroidWebRTC\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.4=C\:\\Users\\pedro\\AndroidStudioProjects\\NativeAndroidWebRTC\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.5=C\:\\Users\\pedro\\AndroidStudioProjects\\NativeAndroidWebRTC\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+#Sun Jun 25 20:49:41 CEST 2023
+base.0=C\:\\Users\\pedro\\AndroidStudioProjects\\Smart-Maintenance-Project\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\pedro\\AndroidStudioProjects\\Smart-Maintenance-Project\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\pedro\\AndroidStudioProjects\\Smart-Maintenance-Project\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.3=C\:\\Users\\pedro\\AndroidStudioProjects\\Smart-Maintenance-Project\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.4=C\:\\Users\\pedro\\AndroidStudioProjects\\Smart-Maintenance-Project\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.5=C\:\\Users\\pedro\\AndroidStudioProjects\\Smart-Maintenance-Project\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=11/classes.dex

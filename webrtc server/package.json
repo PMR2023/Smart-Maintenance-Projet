@@ -1,16 +1,28 @@
 {
-  "name": "webrtc-server",
+  "name": "pmr_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "back-end part of the project for PMR, will act as a signaling server to connect two android applications on peer-to-peer mode using WebRTC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node index.js"
+    "test": "test",
+    "start": "nodemon index.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "PMR_PROJECT"
+  },
+  "keywords": [
+    "webRTC",
+    "signaling",
+    "node",
+    "nodejs",
+    "backend",
+    "back-end"
+  ],
+  "author": "Pedro Munhoz",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^2.0.20",
+    "nodemon": "^2.0.22",
     "websocket": "^1.0.34"
   }
 }

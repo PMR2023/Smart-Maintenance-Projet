@@ -36,7 +36,6 @@ id callLayout
 id codeTV
 id controls
 id end_call_button
-id imageView
 id imageView2
 id imageView3
 id imageView4
@@ -57,6 +56,8 @@ id whoToCallLayout
 layout activity_call
 layout activity_main
 mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_foregroundaaaa
 mipmap ic_launcher_round
 string app_name
 style Base.Theme.SmartMaintenanceDesign

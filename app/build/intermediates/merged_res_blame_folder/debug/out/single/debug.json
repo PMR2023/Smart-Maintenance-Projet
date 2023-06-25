@@ -1,154 +1,190 @@
 [
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\font_inter_medium.ttf.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\font\\inter_medium.ttf"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_baseline_call_end_24.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_baseline_call_end_24.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_reject.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_reject.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_circle_background.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\circle_background.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-pngs-22:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_baseline_call_end_24.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_baseline_call_end_24.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_reject.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_reject.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xhdpi_ic_launcher_foregroundaaaa.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xhdpi/ic_launcher_foregroundaaaa.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/font_inter_regular.ttf.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/font/inter_regular.ttf"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_baseline_videocam_24.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_baseline_videocam_24.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_baseline_hearing_24.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_baseline_hearing_24.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_rectangle_1.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\rectangle_1.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_baseline_cameraswitch_24.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_baseline_cameraswitch_24.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\xml\\data_extraction_rules.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_baseline_speaker_up_24.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_baseline_speaker_up_24.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_baseline_hearing_24.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_baseline_hearing_24.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_baseline_videocam_off_24.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_baseline_videocam_off_24.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_baseline_videocam_24.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_baseline_videocam_24.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\layout_activity_call.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\layout\\activity_call.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_baseline_speaker_up_24.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_baseline_speaker_up_24.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-hdpi_ic_launcher_foregroundaaaa.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-hdpi/ic_launcher_foregroundaaaa.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\layout\\activity_main.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_accept.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_accept.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_rectangle_1.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/rectangle_1.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_login.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\login.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-pngs-22:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xxxhdpi_ic_launcher_foregroundaaaa.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xxxhdpi/ic_launcher_foregroundaaaa.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_curve_background.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\curve_background.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/font_fonts.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/font/fonts.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\xml\\backup_rules.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_login.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/login.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\font_fonts.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\font\\fonts.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/xml_data_extraction_rules.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_baseline_mic_24.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_baseline_mic_24.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_circle_background.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/circle_background.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_line.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\line.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/layout_activity_call.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/layout/activity_call.xml"
+    },
+    {
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_baseline_videocam_off_24.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_baseline_videocam_off_24.xml"
+    },
+    {
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/layout_activity_main.xml.flat",
         "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-mdpi_ic_launcher_foregroundaaaa.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-mdpi/ic_launcher_foregroundaaaa.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\font_inter_light.ttf.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\font\\inter_light.ttf"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/xml_backup_rules.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\font_inter_regular.ttf.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\font\\inter_regular.ttf"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_baseline_cameraswitch_24.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_baseline_cameraswitch_24.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_curve_background.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/curve_background.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_line.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/line.xml"
     },
     {
-        "merged": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-merged_res-27:\\drawable_ic_baseline_mic_off_24.xml.flat",
-        "source": "C:\\Users\\pedro\\.gradle\\daemon\\7.4\\com.codewithkael.webrtcprojectforrecord.app-main-29:\\drawable\\ic_baseline_mic_off_24.xml"
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/font_inter_light.ttf.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/font/inter_light.ttf"
+    },
+    {
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-xxhdpi_ic_launcher_foregroundaaaa.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-xxhdpi/ic_launcher_foregroundaaaa.png"
+    },
+    {
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_accept.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_accept.xml"
+    },
+    {
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_baseline_mic_24.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_baseline_mic_24.xml"
+    },
+    {
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/font_inter_medium.ttf.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/font/inter_medium.ttf"
+    },
+    {
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/drawable_ic_baseline_mic_off_24.xml.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/drawable/ic_baseline_mic_off_24.xml"
+    },
+    {
+        "merged": "com.codewithkael.webrtcprojectforrecord.app-merged_res-27:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.codewithkael.webrtcprojectforrecord.app-main-29:/mipmap-mdpi/ic_launcher_round.png"
     }
 ]

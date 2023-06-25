@@ -51,9 +51,6 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView endCallButton;
 
   @NonNull
-  public final ImageView imageView;
-
-  @NonNull
   public final ImageView imageView2;
 
   @NonNull
@@ -102,7 +99,7 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull ConstraintLayout StartScreen, @NonNull ImageView acceptButton,
       @NonNull ImageView audioOutputButton, @NonNull Button buttonExp,
       @NonNull RelativeLayout callLayout, @NonNull TextView codeTV, @NonNull LinearLayout controls,
-      @NonNull ImageView endCallButton, @NonNull ImageView imageView, @NonNull ImageView imageView2,
+      @NonNull ImageView endCallButton, @NonNull ImageView imageView2,
       @NonNull ImageView imageView3, @NonNull ImageView imageView4,
       @NonNull LinearLayout incomingCallLayout, @NonNull TextView incomingNameTV,
       @NonNull SurfaceViewRenderer localView, @NonNull ImageView micButton,
@@ -119,7 +116,6 @@ public final class ActivityMainBinding implements ViewBinding {
     this.codeTV = codeTV;
     this.controls = controls;
     this.endCallButton = endCallButton;
-    this.imageView = imageView;
     this.imageView2 = imageView2;
     this.imageView3 = imageView3;
     this.imageView4 = imageView4;
@@ -209,12 +205,6 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.end_call_button;
       ImageView endCallButton = ViewBindings.findChildViewById(rootView, id);
       if (endCallButton == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
         break missingId;
       }
 
@@ -309,10 +299,10 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, StartScreen, acceptButton,
-          audioOutputButton, buttonExp, callLayout, codeTV, controls, endCallButton, imageView,
-          imageView2, imageView3, imageView4, incomingCallLayout, incomingNameTV, localView,
-          micButton, rejectButton, remoteView, remoteViewLoading, switchCameraButton, targetKey,
-          textView, textView2, videoButton);
+          audioOutputButton, buttonExp, callLayout, codeTV, controls, endCallButton, imageView2,
+          imageView3, imageView4, incomingCallLayout, incomingNameTV, localView, micButton,
+          rejectButton, remoteView, remoteViewLoading, switchCameraButton, targetKey, textView,
+          textView2, videoButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
